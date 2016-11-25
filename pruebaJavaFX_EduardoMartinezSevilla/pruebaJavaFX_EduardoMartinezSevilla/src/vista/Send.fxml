@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.ControlFX">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane prefHeight="45.0" prefWidth="551.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <GridPane prefHeight="283.0" prefWidth="596.0" BorderPane.alignment="CENTER_LEFT">
+               <children>
+                  <Label styleClass="mylabel" text="Enviar a:">
+                     <GridPane.margin>
+                        <Insets left="45.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="378.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="200.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="mylabel" text="Asunto:" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="47.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="200.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField prefHeight="100.0" prefWidth="455.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" right="200.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label styleClass="mylabel" text="Observaciones: " GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="110.0" left="11.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="35.0" prefWidth="61.0" style="-fx-background-color: #008080; -fx-border-style: #FFFFFF;" text="Enviar" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="420.0" top="100.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../bin/vista/images/github_white.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="320.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="99.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="505.0" minWidth="10.0" prefWidth="497.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="148.0" minHeight="0.0" prefHeight="138.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </right>
+         <top>
+            <AnchorPane prefHeight="77.0" prefWidth="551.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="66.0" fitWidth="67.0" layoutX="14.0" layoutY="30.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@images/github_white.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" layoutX="250.0" layoutY="26.0" mnemonicParsing="false" style="-fx-background-color: #008080; -fx-border-color: #FFFFFF;" text="Send Profile" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="26.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
